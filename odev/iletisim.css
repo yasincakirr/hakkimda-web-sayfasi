@@ -1,0 +1,44 @@
+body{
+border: 20px double rgb(160, 154, 154) ;
+background-color: burlywood;
+    margin-top: 200px;
+    text-align: center;
+    margin-left: 150px;
+    margin-right:150px;
+
+
+}
+
+
+
+
+.menu{
+    text-align: center;
+    
+    background: linear-gradient(124deg, rgba(34,193,195,1) 11%, rgba(201,209,114,1) 85%, rgba(219,230,38,1) 100%);
+
+    border: 9px solid white;
+    border-radius: 300px;
+}
+
+
+
+.yazi::before{
+    content: attr(date-hide);
+    color:darkgreen;
+}
+
+.checkbox{
+    display: none;
+    background-color: darkgreen;
+
+}
+
+.checkbox:checked+.yazi::before{
+    content: attr(date-show);
+    color:darkgreen;
+
+}
+.checkbox:checked+.yazi+ .menu{
+    display: none; 
+}
